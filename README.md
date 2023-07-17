@@ -10,7 +10,7 @@ Welcome to the BApparels Online Store! This is a simple e-commerce web applicati
 - Adjust the quantity of products in the cart
 - Remove products from the cart
 - Proceed to checkout and provide shipping information
-- Empty the cart
+- Empty the cart.
 
 ## Installation
 
