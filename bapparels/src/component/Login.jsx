@@ -35,12 +35,12 @@ const Login = (props) => {
         <button type="submit">Log In</button>
       </form>
       <NavLink className="navbar-brand fw-bold fw-4" to="/signup">
-      <button
-        className="link-btn"
-        onClick={() => props.onFormSwitch("signup")}
-      >
-        Don't have an account? Register here.
-      </button>
+        <button
+          className="link-btn"
+          onClick={() => props.onFormSwitch("signup")}
+        >
+          Don't have an account? Register here.
+        </button>
       </NavLink>
     </div>
   );

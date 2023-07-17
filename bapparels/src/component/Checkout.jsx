@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import axios from "axios";
 
 const Checkout = () => {
   const state = useSelector((state) => state || []);
   const [countries, setCountries] = useState([]);
   const [states, setStates] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState(null);
-  const [selectedState, setSelectedState] = useState('');
+  const [selectedState, setSelectedState] = useState("");
 
   useEffect(() => {
     // Fetch countries data from REST Countries API
     axios
-      .get('https://restcountries.com/v3.1/all')
+      .get("https://restcountries.com/v3.1/all")
       .then((response) => {
         const sortedCountries = response.data.sort((a, b) =>
           a.name.common.localeCompare(b.name.common)
@@ -26,7 +26,7 @@ const Checkout = () => {
 
   useEffect(() => {
     // Update the states when the selected country changes
-    if (selectedCountry !== '') {
+    if (selectedCountry !== "") {
       const selectedCountryObj = countries.find(
         (country) => country.cca3 === selectedCountry
       );
@@ -40,7 +40,7 @@ const Checkout = () => {
 
   const handleCountryChange = (event) => {
     setSelectedCountry(event.target.value);
-    setSelectedState('');
+    setSelectedState("");
   };
 
   const handleStateChange = (event) => {
@@ -51,7 +51,10 @@ const Checkout = () => {
   const itemList = (item) => {
     total = total + item.price;
     return (
-      <li className="list-group-item d-flex justify-content-between lh-sm" key={item.id}>
+      <li
+        className="list-group-item d-flex justify-content-between lh-sm"
+        key={item.id}
+      >
         <div>
           <h6 className="my-0">{item.title}</h6>
         </div>
@@ -67,7 +70,9 @@ const Checkout = () => {
           <div className="col-md-5 col-lg-4 order-md-last">
             <h4 className="d-flex justify-content-between align-items-center mb-3">
               <span className="text-primary">Your cart</span>
-              <span className="badge bg-primary rounded-pill">{state.length}</span>
+              <span className="badge bg-primary rounded-pill">
+                {state.length}
+              </span>
             </h4>
             <ul className="list-group mb-3">
               {state.length > 0 ? (
@@ -83,7 +88,11 @@ const Checkout = () => {
 
             <form className="card p-2">
               <div className="input-group">
-                <input type="text" className="form-control" placeholder="Promo code" />
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Promo code"
+                />
                 <button type="submit" className="btn btn-secondary">
                   Redeem
                 </button>
@@ -106,7 +115,9 @@ const Checkout = () => {
                     value=""
                     required=""
                   />
-                  <div className="invalid-feedback">Valid first name is required.</div>
+                  <div className="invalid-feedback">
+                    Valid first name is required.
+                  </div>
                 </div>
 
                 <div className="col-sm-6">
@@ -121,7 +132,9 @@ const Checkout = () => {
                     value=""
                     required=""
                   />
-                  <div className="invalid-feedback">Valid last name is required.</div>
+                  <div className="invalid-feedback">
+                    Valid last name is required.
+                  </div>
                 </div>
 
                 <div className="col-12">
@@ -137,7 +150,9 @@ const Checkout = () => {
                       placeholder="Username"
                       required=""
                     />
-                    <div className="invalid-feedback">Your username is required.</div>
+                    <div className="invalid-feedback">
+                      Your username is required.
+                    </div>
                   </div>
                 </div>
 
@@ -174,7 +189,9 @@ const Checkout = () => {
                       </option>
                     ))}
                   </select>
-                  <div className="invalid-feedback">Please select a valid country.</div>
+                  <div className="invalid-feedback">
+                    Please select a valid country.
+                  </div>
                 </div>
 
                 <div className="col-md-4">
@@ -187,7 +204,7 @@ const Checkout = () => {
                     onChange={handleStateChange}
                     value={selectedState}
                     required=""
-                    disabled={selectedCountry === ''}
+                    disabled={selectedCountry === ""}
                   >
                     <option value="">Choose...</option>
                     {states.map((state) => (
@@ -196,7 +213,9 @@ const Checkout = () => {
                       </option>
                     ))}
                   </select>
-                  <div className="invalid-feedback">Please provide a valid state.</div>
+                  <div className="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
                 </div>
 
                 <div className="col-12">
@@ -210,7 +229,9 @@ const Checkout = () => {
                     placeholder="1234 Main St"
                     required=""
                   />
-                  <div className="invalid-feedback">Please enter your shipping address.</div>
+                  <div className="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
                 </div>
 
                 <div className="col-12">
@@ -243,14 +264,22 @@ const Checkout = () => {
               <hr className="my-4" />
 
               <div className="form-check">
-                <input type="checkbox" className="form-check-input" id="same-address" />
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="same-address"
+                />
                 <label className="form-check-label" htmlFor="same-address">
                   Shipping address is the same as my billing address
                 </label>
               </div>
 
               <div className="form-check">
-                <input type="checkbox" className="form-check-input" id="save-info" />
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="save-info"
+                />
                 <label className="form-check-label" htmlFor="save-info">
                   Save this information for next time
                 </label>
@@ -312,8 +341,12 @@ const Checkout = () => {
                     placeholder=""
                     required=""
                   />
-                  <small className="text-muted">Full name as displayed on card</small>
-                  <div className="invalid-feedback">Name on card is required</div>
+                  <small className="text-muted">
+                    Full name as displayed on card
+                  </small>
+                  <div className="invalid-feedback">
+                    Name on card is required
+                  </div>
                 </div>
 
                 <div className="col-md-6">
@@ -343,7 +376,9 @@ const Checkout = () => {
                     placeholder=""
                     required=""
                   />
-                  <div className="invalid-feedback">Expiration date required</div>
+                  <div className="invalid-feedback">
+                    Expiration date required
+                  </div>
                 </div>
 
                 <div className="col-md-3">

@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,19 +7,29 @@ const Footer = () => {
       <div className="footer-content">
         <ul className="footer-nav">
           <li>
-            <NavLink to="/about" activeClassName="active">About</NavLink>
+            <NavLink to="/about" activeClassName="active">
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+            <NavLink to="/contact" activeClassName="active">
+              Contact
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/blog" activeClassName="active">Blog</NavLink>
+            <NavLink to="/blog" activeClassName="active">
+              Blog
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/shop" activeClassName="active">Shop</NavLink>
+            <NavLink to="/shop" activeClassName="active">
+              Shop
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/privacy" activeClassName="active">Privacy Policy</NavLink>
+            <NavLink to="/privacy" activeClassName="active">
+              Privacy Policy
+            </NavLink>
           </li>
         </ul>
         <div className="footer-bottom">

@@ -14,13 +14,16 @@ const Privacy = () => {
       <p>
         We may collect the following types of personal information from you:
         <ul>
-          <li>Contact Information: This may include your name, email address,
+          <li>
+            Contact Information: This may include your name, email address,
             phone number, or other similar contact details.
           </li>
-          <li>Demographic Information: This may include your age, gender,
+          <li>
+            Demographic Information: This may include your age, gender,
             location, or other relevant demographic information.
           </li>
-          <li>Usage Information: This may include information about how you use
+          <li>
+            Usage Information: This may include information about how you use
             our website or services, such as your browsing history, IP address,
             device information, or log files.
           </li>
@@ -31,10 +34,21 @@ const Privacy = () => {
         We may use your personal information for the following purposes:
         <ul>
           <li>To provide and improve our products or services.</li>
-          <li>To personalize your experience and tailor content based on your preferences.</li>
-          <li>To communicate with you and respond to your inquiries or requests.</li>
-          <li>To send you promotional or marketing materials, subject to your consent where required by applicable law.</li>
-          <li>To analyze and understand how users interact with our website or services.</li>
+          <li>
+            To personalize your experience and tailor content based on your
+            preferences.
+          </li>
+          <li>
+            To communicate with you and respond to your inquiries or requests.
+          </li>
+          <li>
+            To send you promotional or marketing materials, subject to your
+            consent where required by applicable law.
+          </li>
+          <li>
+            To analyze and understand how users interact with our website or
+            services.
+          </li>
         </ul>
       </p>
       <h3>3. Disclosure of Information</h3>
@@ -42,9 +56,21 @@ const Privacy = () => {
         We may share your personal information with third parties in the
         following circumstances:
         <ul>
-          <li>Service Providers: We may engage trusted third-party service providers to perform certain functions or services on our behalf, such as website hosting, data analysis, or customer support.</li>
-          <li>Legal Requirements: We may disclose your personal information if required to do so by law or in response to a valid legal request or order.</li>
-          <li>Business Transfers: In the event of a merger, acquisition, or sale of our assets, your personal information may be transferred to the acquiring or merged entity.</li>
+          <li>
+            Service Providers: We may engage trusted third-party service
+            providers to perform certain functions or services on our behalf,
+            such as website hosting, data analysis, or customer support.
+          </li>
+          <li>
+            Legal Requirements: We may disclose your personal information if
+            required to do so by law or in response to a valid legal request or
+            order.
+          </li>
+          <li>
+            Business Transfers: In the event of a merger, acquisition, or sale
+            of our assets, your personal information may be transferred to the
+            acquiring or merged entity.
+          </li>
         </ul>
       </p>
       <h3>4. Data Security</h3>
@@ -71,8 +97,8 @@ const Privacy = () => {
       <h3>7. Contact Us</h3>
       <p>
         If you have any questions, concerns, or requests regarding this Privacy
-        Policy or the handling of your personal information, please contact us at
-        [contact information].
+        Policy or the handling of your personal information, please contact us
+        at [contact information].
       </p>
     </div>
   );

@@ -44,9 +44,12 @@ export const Signup = (props) => {
         <button type="submit">Sign Up</button>
       </form>
       <NavLink className="navbar-brand fw-bold fw-4" to="/login">
-      <button className="link-btn" onClick={() => props.onFormSwitch("login")}>
-        Already have an account? Log in here.
-      </button>
+        <button
+          className="link-btn"
+          onClick={() => props.onFormSwitch("login")}
+        >
+          Already have an account? Log in here.
+        </button>
       </NavLink>
     </div>
   );

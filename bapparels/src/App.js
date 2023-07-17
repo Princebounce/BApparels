@@ -1,24 +1,23 @@
-import React from 'react';
-import './App.css';
-import Home from './component/Home';
-import Navbar from './component/Navbar';
-import { Route, Switch } from 'react-router-dom';
-import About from './component/About';
-import Contact from './component/Contact';
-import Product from './component/Product';
-import Products from './component/Products';
-import Signup from './component/Signup';
-import Login from './component/Login';
-import Cart from './component/Cart';
-import Checkout from './component/Checkout';
-import Footer from './component/Footer'; // Import the Footer component
-import Privacy from './component/Privacy';
-
+import React from "react";
+import "./App.css";
+import Home from "./component/Home";
+import Navbar from "./component/Navbar";
+import { Route, Switch } from "react-router-dom";
+import About from "./component/About";
+import Contact from "./component/Contact";
+import Product from "./component/Product";
+import Products from "./component/Products";
+import Signup from "./component/Signup";
+import Login from "./component/Login";
+import Cart from "./component/Cart";
+import Checkout from "./component/Checkout";
+import Footer from "./component/Footer"; // Import the Footer component
+import Privacy from "./component/Privacy";
 
 function App() {
   const handleFormSwitch = (formType) => {
     // Implement logic to switch between login and signup forms
-    console.log('Switching to', formType);
+    console.log("Switching to", formType);
   };
 
   return (
