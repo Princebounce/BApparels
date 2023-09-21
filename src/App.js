@@ -1,18 +1,18 @@
 import React from "react";
 import "./App.css";
-import Home from "./component/Home";
-import Navbar from "./component/Navbar";
+import Home from "./component/home";
+import Navbar from "./component/navbar";
 import { Route, Switch } from "react-router-dom";
-import About from "./component/About";
-import Contact from "./component/Contact";
-import Product from "./component/Product";
-import Products from "./component/Products";
-import Signup from "./component/Signup";
-import Login from "./component/Login";
-import Cart from "./component/Cart";
-import Checkout from "./component/Checkout";
-import Footer from "./component/Footer"; // Import the Footer component
-import Privacy from "./component/Privacy";
+import About from "./component/about";
+import Contact from "./component/contact";
+import Product from "./component/product";
+import Products from "./component/products";
+import Signup from "./component/signup";
+import Login from "./component/login";
+import Cart from "./component/cart";
+import Checkout from "./component/checkout";
+import Footer from "./component/footer"; // Import the Footer component
+import Privacy from "./component/privacy";
 
 function App() {
   const handleFormSwitch = (formType) => {
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="content-wrapper">
+      <div className="content-wrapper"> 
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Products} />

@@ -1,6 +1,4 @@
-.content-wrapper {
-  background-color: #f6f4f6;
-}
+
 
 /* Navbar */
 .navbar-nav a {
@@ -20,7 +18,7 @@
 }
 
 .auth-form-container form {
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 .auth-form-container label {
@@ -243,7 +241,7 @@
 }
 
 .btn-primary {
-  background-color: #ff9f1c !important;
+  background-color: transparent  !important;
   border-color: #ffffff !important;
 }
 
@@ -253,10 +251,3 @@
   border-color: #ffffff !important;
 }
 
-.about-us {
-  color: #ff9f1c !important;
-}
-
-.text-primary {
-  color: #ff9f1c !important;
-}

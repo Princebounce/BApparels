@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
         <div className="col-md-6">
           <form onSubmit={handleSubmit}>
-            <div className="mb-3">
+            <div className="labels">
               <label htmlFor="fullName" className="form-label">
                 Full Name
               </label>

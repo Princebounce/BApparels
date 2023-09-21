@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./index.css"
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <div className="row">
           <div className="col-md-6">
             <h1 className="text-primary fw-bold mb-4">About Us</h1>
-            <p className="lead mb-4">
+            <p className="para">
               Welcome to BApparels, your one-stop destination for trendy and
               fashionable clothing. We are dedicated to providing high-quality
               products and exceptional shopping experiences to our customers.
